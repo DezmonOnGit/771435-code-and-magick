@@ -161,8 +161,7 @@
 </div>
 
 <footer>
-  <p><a href="http://htmlacademy.ru" class="footer-link"><img src="img/htmlacademy-logo.png" alt="HTML Academy"
-                                                              width="130">Сделано в HTML Academy</a>в 2017 году</p>
+  <p><a href="http://htmlacademy.ru" class="footer-link"><img src="img/htmlacademy-logo.png" alt="HTML Academy" width="130">Сделано в HTML Academy</a>в 2017 году</p>
 </footer>
 
 <template id="similar-wizard-template" style="display: none">
@@ -189,35 +188,20 @@
 	var wizardWidth = 70;
 
 	var getFireballSpeed = function(left){
-
-		if(left === true){
-			return 5;
-		}
-		return 2;
+		return left ? 5 : 2;
 	};
 
 	var getWizardHeight = function(){
-		var wizardHeight = 0;
 		var WIZARD_HEIGHT_PROPOTION = 1.337;
-
-		wizardHeight = wizardWidth * WIZARD_HEIGHT_PROPOTION;
-		return wizardHeight;
+		return wizardWidth * WIZARD_HEIGHT_PROPOTION;
 	};
 
 	var getWizardX = function (width){
-		var mageHorizontalPosition = 0;
-
-		mageHorizontalPosition = (width/2) - (wizardWidth/2);
-
-		return mageHorizontalPosition;
+		return (width/2) - (wizardWidth/2);
 	};
 
 	var getWizardY = function(height){
-		var mageVerticalPosition = 0;
-
-		mageVerticalPosition = height/3*2;
-
-		return	mageVerticalPosition;
+		return	height/3*2;
 	};
 
 </script>
