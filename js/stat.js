@@ -1,7 +1,8 @@
 'use strict';
 
 window.renderStatistics = function (ctx, names, times) {
-  //  считаем максимальное время
+
+  //   считаем максимальное время
   var maxTime = calculateMaxTime(times);
 
   // рисуем белое облако с тенью
