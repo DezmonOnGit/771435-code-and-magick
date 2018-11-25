@@ -1,6 +1,7 @@
 'use strict';
 
 window.renderStatistics = function (ctx, names, times) {
+
   // считаем максимальное время
   var maxTime = calculateMaxTime(times);
 
